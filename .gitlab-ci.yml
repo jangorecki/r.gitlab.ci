@@ -1,3 +1,4 @@
 test:
   script:
-    - bash test.sh
+    - echo "success" > test.log
+    - cat test.log
