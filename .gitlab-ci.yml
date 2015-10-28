@@ -1,4 +1,4 @@
-image: r-base
+image: jangorecki/r-base-dev
 test:
   script:
     - R CMD build . --no-build-vignettes --no-manual
