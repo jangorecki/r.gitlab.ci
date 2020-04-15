@@ -1,1 +1,2 @@
-export(f)
+useDynLib(r.gitlab.ci, .registration=TRUE)
+export(hello)

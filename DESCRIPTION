@@ -1,10 +1,10 @@
 Package: r.gitlab.ci
 Type: Package
 Title: Test R Package for Gitlab-CI Setup
-Version: 1.0.0
-Date: 2015-10-26
+Version: 1.0.1
+Date: 2020-04-15
 Author: Jan Gorecki
 Maintainer: Jan Gorecki <j.gorecki@wit.edu.pl>
-Description: Test R package for Gitlab-CI setup.
+Description: Example R package for GitLab CI setup.
 URL: https://gitlab.com/jangorecki/r.gitlab.ci
 License: GPL-3
