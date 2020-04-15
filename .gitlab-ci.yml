@@ -59,6 +59,5 @@ pages:
   - mv bus/* public
   artifacts:
     expire_in: 4 weeks
-    when: always
     paths:
     - public
