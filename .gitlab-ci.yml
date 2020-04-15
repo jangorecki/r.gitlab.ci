@@ -50,7 +50,7 @@ pages:
   - master
   tags:
   - linux
-  image: registry.gitlab.com/jangorecki/dockerfiles/r-base-dev
+  image: ubuntu
   dependencies:
   - test-linux
   - test-windows
