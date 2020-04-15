@@ -11,7 +11,7 @@ test-linux:
   - R CMD build . --no-build-vignettes --no-manual
   - R CMD check $(ls -1t *.tar.gz | head -n 1) --no-manual --ignore-vignettes --as-cran
   - mkdir -p bus/src/contrib
-  - mv $(ls.exe -1t *.zip | head -n 1) bus/src/contrib
+  - mv $(ls -1t *.tar.gz | head -n 1) bus/src/contrib
   - Rscript -e 'tools::write_PACKAGES(contrib.url("bus"), addFiles=TRUE)'
   artifacts:
     expire_in: 4 weeks
