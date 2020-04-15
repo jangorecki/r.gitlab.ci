@@ -17,7 +17,7 @@ test-linux:
     expire_in: 4 weeks
     when: always
     paths:
-    - data.table.Rcheck
+    - r.gitlab.ci.Rcheck
     - bus
 
 test-windows:
@@ -41,7 +41,7 @@ test-windows:
     expire_in: 4 weeks
     when: always
     paths:
-    - data.table.Rcheck
+    - r.gitlab.ci.Rcheck
     - bus
 
 pages:
