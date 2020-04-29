@@ -29,7 +29,7 @@ test-windows:
   - Start-Process -FilePath ..\R-win.exe -ArgumentList "/VERYSILENT /DIR=C:\R" -NoNewWindow -Wait
   - curl.exe -s -o ../rtools.exe https://cran.r-project.org/bin/windows/Rtools/rtools40-x86_64.exe
   - Start-Process -FilePath ..\rtools.exe -ArgumentList "/VERYSILENT /DIR=C:\rtools40" -NoNewWindow -Wait
-  - $ENV:PATH = "C:\R\bin;C:\rtools40\usr\bin;$ENV:PATH"
+  - $ENV:PATH = "C:\R\bin\x64;C:\rtools40\usr\bin;$ENV:PATH"
   script:
   - R.exe CMD build .
   - R.exe CMD check $(ls.exe -1t *.tar.gz | head -n 1) --as-cran --no-manual
